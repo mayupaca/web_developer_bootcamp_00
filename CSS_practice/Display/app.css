@@ -1,3 +1,8 @@
+/* 
+inline : width, heightの指定できないpadding, margin水平OK 垂直NG 
+block : width, height, padding, margin問題なく動く
+inline-block : inline要素みたいに要素のサイズだけどblock要素みたいにwidth, height, padding, marginをあてられる
+*/
 span {
     background-color: palevioletred;
     border: 1px solid black;
