@@ -1,0 +1,14 @@
+h1 {
+  text-align: center;
+  font-weight: 400;
+  text-decoration: rgb(255, 30, 0) underline wavy;
+  letter-spacing: 10px;
+  /* Sans-serifはフォントファミリーの群 */
+  font-family: Lucida Console, Papyrus;
+}
+a {
+  text-decoration: none;
+}
+p {
+  line-height: 2;
+}
