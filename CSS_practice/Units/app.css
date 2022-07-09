@@ -1,25 +1,26 @@
 html {
     font-size: 30px;
 }
-
 #percentages {
     background-color: #e76f51;
-    width: 400px;
+    width: 800px;
     height: 800px;
 }
 
 #percentages div {
-    background-color: #2a9d8f;
-    width: 70%;
-    height: 20%;
+    background-color: #2a9b8f;
+    width:50%;
+    height: 50%;
 }
-
+/* line-height : font-sizeから見ての％ */
 #ems h1 {
     font-size: 40px;
     border: 1px solid black;
     line-height: 200%;
 }
-
+/* 
+em - font-sizeであれば、1emは親要素のfont-sizeと同値となる。2emであれば、親要素の2倍の値。widthなど他のプロパティの場合、1emは対象要素自身のfont-sizeと同値となる。
+*/
 #ems h2 {
     font-size: 2em;
     margin-left: 1em;
@@ -33,34 +34,29 @@ html {
     font-size: 1em;
 }
 
-#ems ul {
-    font-size: 1.2em;
+#ems article {
+    font-size: 20px;
 }
 
-#ems {
-    font-size: 15px;
-}
 
 button {
     font-size: 1em;
     padding: 0 1em;
     border-radius: 0.5em;
-    background-color: #2a9d8f;
+    background-color: #2a9b8f;
     color: white;
 }
+/* nestしてemを使うと、倍々に大きくなる*/
+#ems ul {
+    font-size: 0.8em;
+}
+/* 
+rem - ルート要素のfont-sizeを基準にした相対値。扱いやすい。ルート要素のfont-sizeが20pxなら、1remは20pxになり、2remは必ず40pxになる。htmlのデフォルトサイズ＝ルート
+*/
 
 #rems h2 {
     font-size: 3rem;
 }
-
-#rems h3 {
-    font-size: 2rem;
-}
-
 #rems ul {
-    font-size: 1.2rem;
-}
-
-#rems button {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
