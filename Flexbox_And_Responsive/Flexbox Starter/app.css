@@ -1,0 +1,47 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+#container {
+    background-color: #003049;
+    width: 90%;
+    /* height: 500px; */
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: row;
+    /* 
+    justify-contentは主軸(flex-direction)から見ての位置 
+    */
+    justify-content: center;
+    /* 
+    align-itemsは交差軸(flex-directionじゃない)から見ての位置 
+    */
+    /* baselineは文字の下基準でそろう */
+    /* align-items: baseline; */
+    /* align-items: flex-start;
+    flex-wrap: wrap; */
+    /* align-contentはflex-wrapがないと効果がない */
+    /* align-content: flex-start; */
+}
+#container div {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    font-size: 4em;
+    /* 主軸にあわせる。flex-basis優先 */
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+/* div:nth-of-type(1) {
+    flex-grow: 1;
+} */
+
+/* align-selfは要素一つだけ動かす */
+/* div:nth-of-type(3) {
+    align-self: center;
+} */
+
