@@ -1,20 +1,69 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 h1 {
-    font-size: 6em;
-    text-align: center;
+  font-size: 6em;
+  text-align: center;
 }
 nav {
-    font-size: 1.5em;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: space-between;
 }
 
-ul,li {
-    display: inline;
-    margin: 0;
-    padding: 0;
+ul,
+li {
+  display: inline;
+  margin: 0;
+  padding: 0;
 }
 
+ul {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+/* 
+min-width - 指定された値以上のとき適用 
+例） ↓の場合は800px以上になったときにh1をaquamarineにする
+*/
+/* @media (min-width: 800px) {
+    h1 {
+        color: aquamarine;
+    }
+} */
+/* 
+max-width - 指定された値以下のとき適用 
+例） ↓の場合は800px以下になったときにh1をpinkにする
+*/
+/* @media (max-width: 800px) {
+    h1 {
+        color: pink;
+    }
+} */
+/* 
+400pxから700pxの間の指定
+*/
+/* @media (min-width: 400px) and (max-width: 700px) {
+    h1 {
+        color: papayawhip;
+    }
+} */
 
-
+@media (max-width: 768px) {
+  h1 {
+    font-size: 4em;
+  }
+  nav, nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+   
+}
+@media (max-width: 576px) {
+  h1 {
+    font-size: 3em;
+  }
+}
