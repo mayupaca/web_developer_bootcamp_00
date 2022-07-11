@@ -17,7 +17,9 @@
   <body>
     <div class="container-md">
       <h1 class="display-1">Bootstrap Playground</h1>
-      <h2 class="display-3">Button</h2>
+      <h2 class="display-3">
+        Button<span class="badge badge-success">New</span>
+      </h2>
       <button type="button" class="btn btn-primary">Primary</button>
       <button type="button" class="btn btn-success">Success</button>
       <button type="button" class="btn btn-info">Info</button>
@@ -29,6 +31,26 @@
       <button type="button" class="btn btn-sm btn-info" disabled>
         Disabled info button
       </button>
+      <button type="button" class="btn btn-primary">
+        Notifications <span class="badge bg-secondary">4</span>
+      </button>
+
+      <h3>Button Group</h3>
+      <div class="btn-group" role="group">
+        <button class="btn btn-warning">One</button>
+        <button class="btn btn-warning">Two</button>
+        <button class="btn btn-warning">Three</button>
+      </div>
+
+      <h3>Alert</h3>
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <h4 class="alert-header">Error</h4>
+        You are not allowed to do the acction!!
+        <button class="close" data-dismiss="alert">
+            <span aria-hidden="true">&times;</span>
+        </button> 
+    </div>
+
       <p class="lead">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi vero,
         fugiat optio quidem asperiores adipisci, nisi sit excepturi, esse
