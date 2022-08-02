@@ -10,6 +10,7 @@ function scream() {
     console.log('いやーーーーー');
 }
 
+// ここでは実行しないから、scream;。()を付けちゃうと実行する。
 btn.onmouseenter = scream;
 
 document.querySelector('h1').onclick = () => {
@@ -32,6 +33,6 @@ function moge() {
 const hogemogeButton = document.querySelector('#hogemoge');
 // hogemogeButton.onclick = hoge;
 // hogemogeButton.onclick = moge;
-
+// addEventListenerはeventをついかする。↑の場合は上書きしちゃう。
 hogemogeButton.addEventListener('click', hoge);
 hogemogeButton.addEventListener('click', moge);
