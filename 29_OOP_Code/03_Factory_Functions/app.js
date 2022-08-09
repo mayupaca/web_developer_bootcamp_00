@@ -12,6 +12,7 @@ function makeColor(r, g, b) {
 	color.g = g;
 	color.b = b;
 	color.rgb = function () {
+		// 分割代入
 		const { r, g, b } = this;
 		return `rgb(${r}, ${g}, ${b})`;
 	}

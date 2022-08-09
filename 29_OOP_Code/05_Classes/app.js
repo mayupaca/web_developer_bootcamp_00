@@ -1,14 +1,18 @@
 class Color {
     constructor(r, g, b, name) {
+        // const this = {};
         this.r = r;
         this.g = g;
         this.b = b;
         this.name = name;
+        // return this;
     }
+    // innerRGBメソッド
     innerRGB() {
         const {r, g, b} = this;
         return `${r}, ${g}, ${b}`
     }
+    // rgbメソッド
     rgb() {
         return `rgb(${this.innerRGB()})`;
     }
@@ -23,3 +27,6 @@ class Color {
 
 const red = new Color(255, 67, 89, 'tomato');
 const white = new Color(255, 255, 255, 'white');
+
+// red.rgb();
+// document.body.style.backgroundColor = red.rgba();
